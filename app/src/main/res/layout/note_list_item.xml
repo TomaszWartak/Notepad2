@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <!-- tytul notatki -->
+    <TextView
+        android:id="@+id/noteTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/note_title_label" />
+
+    <TextView
+        android:id="@+id/noteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignBaseline="@id/noteTitleLabel"
+        android:layout_alignBottom="@id/noteTitleLabel"
+        android:layout_toRightOf="@id/noteTitleLabel"
+        android:text="@string/ellipsis" />
+
+    <!-- priorytet notatki-->
+    <TextView
+        android:id="@+id/notePriorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteTitleLabel"
+        android:layout_alignLeft="@+id/noteTitleLabel"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/note_priority_label"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/notePriority"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignBaseline="@id/notePriorityLabel"
+        android:layout_alignBottom="@id/notePriorityLabel"
+        android:layout_toRightOf="@id/notePriorityLabel"
+        android:text="@string/ellipsis" />
+
+
+    <!-- rodzaj notatki -->
+    <TextView
+        android:id="@+id/noteKindLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/notePriorityLabel"
+        android:layout_below="@+id/notePriority"
+        android:layout_marginRight="10dp"
+        android:text="@string/note_kind_label" />
+
+    <TextView
+        android:id="@+id/noteKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignBaseline="@id/noteKindLabel"
+        android:layout_alignBottom="@id/noteKindLabel"
+        android:layout_toRightOf="@id/noteKindLabel"
+        android:text="@string/ellipsis" />
+
+    <!-- data utworzenia notatki -->
+    <TextView
+        android:id="@+id/noteCreationDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/noteKindLabel"
+        android:layout_below="@+id/noteKindLabel"
+        android:layout_marginRight="10dp"
+        android:text="@string/note_creation_date_label" />
+
+    <TextView
+        android:id="@+id/noteCreationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignBaseline="@id/noteCreationDateLabel"
+        android:layout_alignBottom="@id/noteCreationDateLabel"
+        android:layout_toRightOf="@id/noteCreationDateLabel"
+        android:text="@string/ellipsis" />
+
+</RelativeLayout>

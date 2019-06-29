@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+
+        <!-- tytul notatki -->
+        <TextView
+            android:id="@+id/editNoteTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/note_title_label" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/noteTitleLabel"
+            android:layout_toRightOf="@id/noteTitleLabel"
+            android:hint="@string/hint_edit_note_title"
+            android:textColor="@android:color/holo_blue_light"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete" />
+
+        <!-- priorytet notatki -->
+        <TextView
+            android:id="@+id/editNotePriorityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNoteTitleLabel"
+            android:layout_alignLeft="@+id/editNoteTitleLabel"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:text="@string/note_priority_label" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editNotePriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editNotePriorityLabel"
+            android:layout_toRightOf="@id/editNotePriorityLabel"
+            android:hint="@string/hint_edit_note_priority"
+            android:textColor="@android:color/holo_blue_light"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <!-- rodzaj notatki -->
+        <TextView
+            android:id="@+id/editNoteKindLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNotePriorityLabel"
+            android:layout_alignLeft="@+id/editNoteTitleLabel"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:text="@string/note_kind_label" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editNoteKind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editNoteKindLabel"
+            android:layout_toRightOf="@id/editNoteKindLabel"
+            android:hint="@string/hint_edit_note_kind"
+            android:textColor="@android:color/holo_blue_light"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <!-- treść notatki -->
+        <TextView
+            android:id="@+id/editNoteContentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNoteKindLabel"
+            android:layout_alignLeft="@+id/editNoteKindLabel"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:text="@string/note_content_label" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editNoteContentLabel"
+            android:layout_toRightOf="@id/editNoteContentLabel"
+            android:hint="@string/hint_edit_note_content"
+            android:textColor="@android:color/holo_blue_light"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete|textMultiLine" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notepad2</string>
+    <string name="ellipsis">...</string>
+    <string name="note_title_label">Title:</string>
+    <string name="note_priority_label">Priority:</string>
+    <string name="note_kind_label">Kind:</string>
+    <string name="note_creation_date_label">Creation date:</string>
+    <string name="hint_edit_note_title">Enter the title of the note</string>
+    <string name="hint_edit_note_priority">Choose a priority</string>
+    <string name="hint_edit_note_kind">Choose the type of note</string>
+    <string name="hint_edit_note_content">Enter the content of the note</string>
+    <string name="header_new_note">New note</string>
+    <string name="header_edit_note">Edit note</string>
+    <string name="note_content_label">Content:</string>
+</resources>
